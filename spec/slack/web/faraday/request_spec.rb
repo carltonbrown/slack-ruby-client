@@ -23,10 +23,10 @@ RSpec.describe Slack::Web::Faraday::Request do
   context 'authorization' do
     let(:path) { '/any-path' }
     let(:options) { {} }
-    let(:connection) { instance_double('Faraday::Connection') }
-    let(:request) { instance_double('Faraday::Request') }
-    let(:headers) { instance_double('Faraday::Utils::Headers') }
-    let(:response) { instance_double('Faraday::Response', body: '') }
+    let(:connection) { instance_double(Faraday::Connection) }
+    let(:request) { instance_double(Faraday::Request) }
+    let(:headers) { instance_double(Faraday::Utils::Headers) }
+    let(:response) { instance_double(Faraday::Response, body: '') }
 
     before do
       allow(client).to receive(:connection).and_return(connection)
