@@ -33,5 +33,5 @@ jobs:
           RACK_ENV: test
         run: |
           bundle install
-          bundle exec rake
+          bundle exec rspec spec
         
