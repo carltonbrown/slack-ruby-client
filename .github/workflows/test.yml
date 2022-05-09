@@ -6,8 +6,6 @@ jobs:
     strategy:
       matrix:
         entry:
-          - { ruby: 2.5.3 }
-          - { ruby: 2.6.2 }
           - { ruby: 2.7.1 }
           - { ruby: 2.7.1, concurrency: async-websocket }
           - { ruby: 3.0.2 }
