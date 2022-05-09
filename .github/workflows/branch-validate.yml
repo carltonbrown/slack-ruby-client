@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Tests
-        if: ${{ contains(github.ref, env.forbidden_branches)
+        if: ${{ contains(github.ref, env.forbidden_branches) }}
         env:
           RACK_ENV: test
         run: |
