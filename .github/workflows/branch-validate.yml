@@ -2,7 +2,7 @@ name: Validate branch name
 on: [push, pull_request]
 
 env:
-  forbidden_branches: 'develop master'
+  forbidden_branches: 'add-actions master'
 
 jobs:
   comment:
